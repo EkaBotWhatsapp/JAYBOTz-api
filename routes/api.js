@@ -542,7 +542,71 @@ res.send(body)})})
 router.get('/tebaklirik', async (req, res, next) => {  
 var apikeyInput = req.query.apikey
 if(apikeyInput != apikey) return res.json({message: 'APIKEY SALAH' })
-fetch(encodeURI(`https://api-yogipw.herokuapp.com/api/kuis/tebaklirik`))
+fetch(encodeURI(`https://raw.githubusercontent.com/BochilTeam/database/master/games/tebaklirik.json`))
+.then(response => response.json())
+.then(data => { var result = data;
+res.json({ result })})})
+
+router.get('/asahotak', async (req, res, next) => {  
+var apikeyInput = req.query.apikey
+if(apikeyInput != apikey) return res.json({message: 'APIKEY SALAH' })
+fetch(encodeURI(`https://raw.githubusercontent.com/BochilTeam/database/master/games/asahotak.json`))
+.then(response => response.json())
+.then(data => { var result = data;
+res.json({ result })})})
+
+router.get('/family100', async (req, res, next) => {  
+var apikeyInput = req.query.apikey
+if(apikeyInput != apikey) return res.json({message: 'APIKEY SALAH' })
+fetch(encodeURI(`https://raw.githubusercontent.com/BochilTeam/database/master/games/family100.json`))
+.then(response => response.json())
+.then(data => { var result = data;
+res.json({ result })})})
+
+router.get('/siapakahaku', async (req, res, next) => {  
+var apikeyInput = req.query.apikey
+if(apikeyInput != apikey) return res.json({message: 'APIKEY SALAH' })
+fetch(encodeURI(`https://raw.githubusercontent.com/BochilTeam/database/master/games/siapakahaku.json`))
+.then(response => response.json())
+.then(data => { var result = data;
+res.json({ result })})})
+
+router.get('/tebakkabupaten', async (req, res, next) => {  
+var apikeyInput = req.query.apikey
+if(apikeyInput != apikey) return res.json({message: 'APIKEY SALAH' })
+fetch(encodeURI(`https://raw.githubusercontent.com/BochilTeam/database/master/games/tebakkabupaten.json`))
+.then(response => response.json())
+.then(data => { var result = data;
+res.json({ result })})})
+
+router.get('/tebakkalimat', async (req, res, next) => {  
+var apikeyInput = req.query.apikey
+if(apikeyInput != apikey) return res.json({message: 'APIKEY SALAH' })
+fetch(encodeURI(`https://raw.githubusercontent.com/BochilTeam/database/master/games/tebakkalimat.json`))
+.then(response => response.json())
+.then(data => { var result = data;
+res.json({ result })})})
+
+router.get('/tebakkata', async (req, res, next) => {  
+var apikeyInput = req.query.apikey
+if(apikeyInput != apikey) return res.json({message: 'APIKEY SALAH' })
+fetch(encodeURI(`https://raw.githubusercontent.com/BochilTeam/database/master/games/tebakkata.json`))
+.then(response => response.json())
+.then(data => { var result = data;
+res.json({ result })})})
+
+router.get('/tebaktebakan', async (req, res, next) => {  
+var apikeyInput = req.query.apikey
+if(apikeyInput != apikey) return res.json({message: 'APIKEY SALAH' })
+fetch(encodeURI(`https://raw.githubusercontent.com/BochilTeam/database/master/games/tebaktebakan.json`))
+.then(response => response.json())
+.then(data => { var result = data;
+res.json({ result })})})
+
+router.get('/tekateki', async (req, res, next) => {  
+var apikeyInput = req.query.apikey
+if(apikeyInput != apikey) return res.json({message: 'APIKEY SALAH' })
+fetch(encodeURI(`https://raw.githubusercontent.com/BochilTeam/database/master/games/tekateki.json`))
 .then(response => response.json())
 .then(data => { var result = data;
 res.json({ result })})})
@@ -550,7 +614,7 @@ res.json({ result })})})
 router.get('/tebakkimia', async (req, res, next) => {  
 var apikeyInput = req.query.apikey
 if(apikeyInput != apikey) return res.json({message: 'APIKEY SALAH' })
-fetch(encodeURI(`https://api-yogipw.herokuapp.com/api/kuis/tebakkimia`))
+fetch(encodeURI(`https://raw.githubusercontent.com/BochilTeam/database/master/games/tebakkimia.json`))
 .then(response => response.json())
 .then(data => { var result = data;
 res.json({ result })})})
@@ -566,7 +630,7 @@ res.json({ result })})})
 router.get('/tebakbendera', async (req, res, next) => {  
 var apikeyInput = req.query.apikey
 if(apikeyInput != apikey) return res.json({message: 'APIKEY SALAH' })
-fetch(encodeURI(`https://api-yogipw.herokuapp.com/api/kuis/tebakbendera`))
+fetch(encodeURI(`https://raw.githubusercontent.com/BochilTeam/database/master/games/tebakbendera.json`))
 .then(response => response.json())
 .then(data => { var result = data;
 res.json({ result })})})
@@ -574,7 +638,7 @@ res.json({ result })})})
 router.get('/tebakgambar', async (req, res, next) => {  
 var apikeyInput = req.query.apikey
 if(apikeyInput != apikey) return res.json({message: 'APIKEY SALAH' })
-fetch(encodeURI(`https://api-yogipw.herokuapp.com/api/kuis/tebakgambar`))
+fetch(encodeURI(`https://raw.githubusercontent.com/BochilTeam/database/master/games/tebakgambar.json`))
 .then(response => response.json())
 .then(data => { var result = data;
 res.json({ result })})})
@@ -582,7 +646,7 @@ res.json({ result })})})
 router.get('/caklontong', async (req, res, next) => {  
 var apikeyInput = req.query.apikey
 if(apikeyInput != apikey) return res.json({message: 'APIKEY SALAH' })
-fetch(encodeURI(`https://api-yogipw.herokuapp.com/api/kuis/caklontong`))
+fetch(encodeURI(`https://raw.githubusercontent.com/BochilTeam/database/master/games/caklontong.json`))
 .then(response => response.json())
 .then(data => { var result = data;
 res.json({ result })})})
